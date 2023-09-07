@@ -28,7 +28,7 @@
         </nav>
     </header>
     <main>
-        <section class="home">
+        <section class="home" id="home">
             <h1>Hi. I'm Justin.</h1>
             <p>Full-stack developer in-training.</p>
         </section>
@@ -55,8 +55,32 @@
         <section>
             <article class="projects">
                 <h1>Horiseon Code Refactor</h1>
-                <img src="..images/horiseon.png">
+                <p>Original website code was refactored to optimize website for search engines. Added semantic HTML elements and alternate text for images to meet accessibility standards.</p>
+                <a href="https://jnc2248.github.io/horiseon-refactor-code/" target="_blank"><img src="./assets/images/horiseon.png"></a>
             </article>
+        </section>
+        <p class="title" id="contact">//  contact</p>
+        <section class="contact-form">
+            <form action="action_page.php">
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="First Name">
+            
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Last Name">
+            
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="usa">USA</option>
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                </select>
+            
+                <label for="subject">Tell Me About Yourself</label>
+                <textarea id="subject" name="subject" placeholder="Begin Here..." style="height:200px"></textarea>
+            
+                <input type="submit" value="Submit">
+              </form>
         </section>
     </main>
 </body>
