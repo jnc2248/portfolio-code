@@ -1,0 +1,37 @@
+
+header {
+    width: 100%;
+    position: fixed;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+    background-color: navy;
+}
+
+header h1 {
+    text-align: left;
+    font-size: 40px;
+    color: yellow;
+    display: inline-block;
+}
+
+header nav {
+    padding-top: 10px;
+    margin-right: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    float: right;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    color: yellow;
+    text-decoration: none;
+}
