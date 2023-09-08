@@ -1,9 +1,10 @@
 
 body  {
-    background-image: url("../images/portfolio-background.png");
+    background-image: url("../images/blur-background.png");
+    background-repeat: no-repeat;
     background-size:cover;
-        -webkit-animation: slidein 70s;
-        animation: slidein 70s;
+        -webkit-animation: slidein 20s;
+        animation: slidein 20s;
 
         -webkit-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
@@ -48,7 +49,7 @@ header nav ul {
 
 header nav ul li {
     display: inline-block;
-    margin: 0 10px 0 10px;
+    margin: 0 40px 0 40px;
 }
 
 header nav ul li a {
@@ -58,14 +59,14 @@ header nav ul li a {
 
 .home {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size:50px;
-    color: rgb(186, 186, 255);
+    font-size:60px;
+    color: white;
     text-align: center;
-    margin: 200px 0 1000px 0;
+    margin: 300px 0 300px 0;
 }
 
 .home p {
-    font-size: 25px;
+    font-size: 40px;
 }
 
 .title {
@@ -73,34 +74,66 @@ header nav ul li a {
     justify-content: center;
     flex-wrap: wrap;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: rgb(186, 186, 255);
-    margin-top: 100px;
+    color: rgb(194, 194, 253);
+    margin-top: 800px;
     font-size: 50px;
     font-weight: bold;
-    padding: 40px;
+    padding: 50px;
 }
 
 .about {
-    border: 2px solid black;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 0 300px 40px 40px;
-    background-color: rgba(186, 186, 255, 0.5);
-    color: white;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.about h1 {
+.about article {
+    background-color: rgba(186, 186, 255, 0.1);
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    flex: 1 0 0;
+    padding: 10px;
+    text-align: left;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.about article h1 {
+    margin: 20px;
     margin-bottom: 10px;
     font-size: 20px;
     font-weight: bold;
     color: white;
 }
 
+.about p {
+    line-height: 1.5;
+    margin: 20px;
+}
+
+ul{
+    list-style: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.about li {
+    display: inline-block;
+    margin: 20px 40px 20px 40px;
+    font-size: 20px;
+}
+
 .projects {
-    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    border: 2px solid white;
     border-radius: 5px;
     padding: 10px;
-    margin: 0 750px 40px 40px;
+    margin: 40px;
     background-color: rgba(186, 186, 255, 0.5);
     color: white;
 }
@@ -110,20 +143,24 @@ header nav ul li a {
     font-size: 30px;
     font-weight: bold;
     text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .projects p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     line-height: 1.5;
-    padding: 0 10px 10px 10px;
+    padding: 10px 10px 60px 10px;
 }
 
 .projects img {
-    margin-left: 0px;
-    padding: 10px;
-    width: 150%;
-    height: 150%;
-    object-fit: cover;
+    padding: 0px;
+}
+
+.cropped {
+    height: 400px;
+    width: auto;
+    overflow: hidden;
 }
 
 input[type=text], select, textarea {
@@ -151,10 +188,17 @@ input[type=submit]:hover {
 }
   
 .contact-form {
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: rgba(186, 186, 255, 0.5);
     font-size: 20px;
     color: white;
     padding: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+@media screen and (max-width:768px) {
+    .about {
+        flex-direction: column;
+    }
 }
