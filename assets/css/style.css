@@ -35,7 +35,6 @@ header {
 }
 
 header nav {
-    padding: 10px 0 10px 0;
     margin-right: 0px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
@@ -62,11 +61,17 @@ header nav ul li a {
     font-size:60px;
     color: white;
     text-align: center;
-    margin: 300px 0 300px 0;
+    margin: 300px 0 0 0;
 }
 
 .home p {
     font-size: 40px;
+}
+
+.home img {
+    padding: 20px;
+    height: 30%;
+    width: 30%;
 }
 
 .title {
@@ -75,10 +80,22 @@ header nav ul li a {
     flex-wrap: wrap;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: rgb(194, 194, 253);
-    margin-top: 800px;
+    margin-top: 600px;
     font-size: 50px;
     font-weight: bold;
-    padding: 50px;
+    padding: 80px 0 40px 0;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    margin-top: 600px;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 80px 0 40px 0;
 }
 
 .about {
@@ -147,10 +164,12 @@ ul{
 }
 
 .projects p {
+    text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     line-height: 1.5;
-    padding: 10px 10px 60px 10px;
+    font-size: 20px;
+    padding: 10px 10px 20px 10px;
 }
 
 .projects img {
